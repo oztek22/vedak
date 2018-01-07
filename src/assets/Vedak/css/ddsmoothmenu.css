@@ -1,0 +1,61 @@
+.main_menu { position:relative; z-index:9; text-align:center;  }
+.main_menu ul { padding:0px; margin:0px; display:inline-block; float:left; }
+.main_menu > ul > li { float:left; display:inline-block; position:relative; padding:0 30px;} 
+.main_menu > ul > li > a { color:#fff; font-size:21px; transition: all 0.2s ease 0s;text-transform:capitalize; line-height:40px; float:left;}
+.main_menu > ul > li:hover > a, .main_menu > ul > li > a.active{ color:#fad55e; }
+
+/* submenus */
+.main_menu ul ul {   width:170px; position:absolute; padding:0px; margin:0px;  background:#fff;  display:block; text-align:left; display:none; -webkit-transition: all .50s ease; -moz-transition: all .50s ease; -ms-transition: all .50s ease; -o-transition: all .50s ease; transition: all .50s ease;  }
+.main_menu ul ul li { display:block; position:relative; border-bottom:1px solid #cfcfcf; }
+.main_menu ul ul li a { padding:8px 15px; display:block; font-size:14px; color:#626262; text-decoration:none; }
+.main_menu ul ul a:hover { text-decoration:none; }
+.main_menu ul ul li:hover { background-color:#97917d; }
+.main_menu ul ul li:hover > a { color:#000; }
+.main_menu ul ul ul li:hover { background-color:#97917d; }
+.main_menu ul ul ul li:hover > a { color:#000; }
+.main_menu ul ul ul ul li:hover { background-color:#97917d; }
+.main_menu ul ul ul ul li:hover > a { color:#000; }
+
+.main_menu li:hover > ul {  display:block; }
+.main_menu > ul > li > ul > li:first-child { border-top:0px; }
+.main_menu > ul > li > ul > li:first-child li:first-child { border-top:0px; }
+.main_menu ul ul ul { padding-top:0px; left:170px; top:0; border-top:0; background:#fff; }
+.main_menu ul ul ul ul { padding-top:0px; left:170px; top:0; border-top:0; background:#fff; }
+.main_menu ul ul li:first-child > ul { top:0px; border-top:0px; }
+.main_menu > select { display:none; }
+.main_menu > ul >li.last { border-right:none; }
+/* Responsive Menu
+==========================*/
+
+/* hide the link until viewport size is reached */
+a.meanmenu-reveal { display: none; }
+/* when under viewport size, .mean-container is added to body */
+
+.mean-bar { position: relative; width: 100%; z-index: 99; }
+a.meanmenu-reveal { width:25px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size: 18px; font-weight: 700; line-height: 22px; text-align: center; text-decoration: none; float:right; padding: 10px 0px; height:25px; }
+a.meanmenu-reveal.meanclose {  }
+a.meanmenu-reveal span {
+    background: #fff;
+    display: block;
+    height: 3px;
+    margin-top: 3px;
+}
+.mean-nav { background: #fff; float: left; position: absolute; top: 55px; width: 100%;  }
+.mean-nav ul { padding: 0; margin: 0; width: 100%; list-style-type: none; }
+.mean-nav ul li { position: relative; float: left; width: 100%; overflow:hidden; }
+.mean-nav ul li a { display: block; float: left; width: 100%; padding:8px 15px; margin: 0; font-size:14px;  text-align: left; color: #626262; border-bottom: 1px solid #CFCFCF; text-decoration: none; text-transform:uppercase; box-sizing:border-box; font-weight:bold;  }
+.mean-nav ul li li a { width: 100%; padding:8px 30px; text-transform:none; border-bottom: 1px solid #CFCFCF; text-shadow: none !important; visibility: visible; }
+.mean-nav ul li.mean-last a { border-bottom: none; margin-bottom: 0; }
+.mean-nav ul li li li a { width: 100%; padding: 8px 30px; }
+.mean-nav ul li li li li a { width: 100%; padding: 8px 30px; }
+.mean-nav ul li li li li li a { width: 100%; padding: 8px 30px; }
+.mean-nav ul li a:hover { background: #fad55e; color:#fff; }
+.mean-nav ul li a.mean-expand { border: medium none !important; font-family: Verdana, Geneva, sans-serif; font-weight: 700; height: 26px; padding: 5px; position: absolute; right: 0; text-align: center; top: 0; width: 33px; z-index: 2; }
+.mean-nav ul li.current_page_item  > a {  }
+.mean-nav ul ul { background:#e6e6e6; overflow:hidden; }
+.mean-nav ul ul ul { background:#ececec; overflow:hidden; }
+.mean-nav ul ul ul ul { background:#f3f4f2; overflow:hidden; }
+
+.home .main_menu > ul > li > a, .home header li.myprofile a, .loginpage header li.myprofile a, .forgotpasswordpage header li.myprofile a {color:#fff;}
+.loginpage .main_menu > ul > li > a, .forgotpasswordpage .main_menu > ul > li > a { color:#fff;}
+.loginpage header li.joinus a, .forgotpasswordpage header li.joinus a { color:#fff;}
